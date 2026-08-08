@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body{
     background-color: black;
@@ -44,6 +45,8 @@ text-align: center;
 .blog1child1 >img{
     width: 50px;
     border-radius: 100px;
+    position: relative;
+    top: 10px;
     
 }
 .blog-1 >img{
@@ -66,6 +69,8 @@ text-align: center;
 .blog2child2>img{
     width: 50px;
     border-radius: 100px;
+    position: relative;
+    top: 10px;
 }
 .blog-2 >img{
     height: 200px;
@@ -83,6 +88,8 @@ text-align: center;
 .blog3child3>img{
     width: 50px;
     border-radius: 100px;
+    position: relative;
+    top: 10px;
 }
 .blog-3 >img{
     height: 200px;
@@ -95,21 +102,35 @@ text-align: center;
     justify-content: space-around;
 }
 #contact{
-    color: goldenrod;
+    color: black;
+    text-align: center;
+   background-color: rgba(190, 178, 162, 0.705);
+   border: solid;
+   border-color: white;
+   margin: 50px 300px;
 }
 #reviews{
     color: goldenrod;
 }
 #services{
     color:goldenrod ;
-
+}
+#services ol{
+display: grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr ;
 }
 button{
-    display: block;
-    text-align: left;
+    width: 200px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 20px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
 }
 .navigation{
-    width: ;
+    width: 100%;
     
 }
 .icon >img{
@@ -118,4 +139,65 @@ right:15% ;
 top: 50px
 
 }
+.wicon{
+    position: fixed;
+    right: 200px;
+}
+    .blog1child1 {
+        display: flex;
+    }
+    .blog-1 >small{
+        position: relative;
+        left: 50px;
+        
+    }
+.blog2child2 {
+        display: flex;
+    }
+    .blog-2 >small{
+        position: relative;
+        left: 50px;
+        
+    }
+    .blog3child3 {
+        display: flex;
+    }
+    .blog-3 >small{
+        position: relative;
+        left: 50px;
+        
+    }
 
+/*responsiveness*/
+
+    @media (max-width: 768px) {
+      .navigation{
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .cards{
+        flex-direction: column;
+      }
+        .body{
+           flex-direction: column;
+      } 
+        }
+        .footer{
+            flex-direction: column;
+      }
+        
+        #contact{
+            flex-direction: column;
+      }
+        
+        #reviews{
+            flex-direction: column;
+      
+        }
+        #services{
+            flex-direction: column;
+      
+      }
+      
+    
+    
