@@ -25,13 +25,14 @@ nav >a{
     color: black;
 }
 
-#about >h1 {
+#home {
 color: rgba(255, 255, 255, 0.719);
 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 65px;
 text-align: center;
+padding: 20px;
 }
-#about >p{
+#about {
     text-align: center;
     color:goldenrod ;
     font-style: italic;
@@ -42,60 +43,128 @@ text-align: center;
     background-color: rgba(117, 102, 102, 0.685);
     width: 350px;
     height: 420px;
+    border-radius: 20px;
 }
 .blog1child1 >img{
-    width: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     position: relative;
-    top: 10px;
-    
+    bottom: 8px;
+    padding: 10px;
+
 }
 .blog-1 >img{
-    height: 200px;
-    width: 560px;
+    height: 150px;
+    width: 350px;
+    border-radius: 15px;
+}
+.blog-1 >h2{
+    padding: 10px;
+    margin: 10px;
+    background-color: goldenrod;
+    width: 200px;
+    border-radius: 20px;
+}
+.blog-1 >h3{
+    padding: 5px;
+}
+.blog-1 >p{
+    padding: 20px;
+}
+.blog-1 >small{
+    position: relative;
+    bottom: 30px;
 }
 .cards{
     display: flex;
     justify-content: space-around;
     background-color:black;
-    gap: 10px;
+    gap: 5px;
+
 }
 
 .blog-2{
     background-color: rgba(117, 102, 102, 0.685);
     width: 350px;
     height: 420px;
+    border-radius: 20px;
 
 }
 .blog2child2>img{
-    width: 50px;
+     width: 35px;
+    height: 35px;
     border-radius: 100px;
     position: relative;
-    top: 10px;
+    bottom: 8px;
+    padding: 10px;
+
 }
 .blog-2 >img{
-    height: 200px;
-    width: 560px;
+    height: 150px;
+    width: 350px;
+    border-radius: 15px
 }
 
-
+.blog-2 >h2{
+    padding: 10px;
+    margin: 10px;
+    background-color: goldenrod;
+    width: 200px;
+    border-radius: 20px;
+}
+.blog-2 >h3{
+    padding: 5px;
+}
+.blog-2 >p{
+    padding: 20px;
+}
+.blog-2 >small{
+    position: relative;
+    bottom: 30px;
+}
 
 .blog-3{
     background-color: rgba(117, 102, 102, 0.685);
     width: 350px;
     height: 420px;
+    border-radius: 20px;
 
 }
 .blog3child3>img{
-    width: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 100px;
     position: relative;
-    top: 10px;
+    bottom: 8px;
+    padding: 10px;
+
+    
 }
 .blog-3 >img{
-    height: 200px;
-    width: 560px;
+   height: 150px;
+    width: 350px;
+    border-radius: 15px
 }
+.blog-3 >h2{
+    padding: 10px;
+    margin: 10px;
+    background-color: goldenrod;
+    width: 200px;
+    border-radius: 20px;
+}
+.blog-3 >h3{
+    padding: 5px;
+}
+.blog-3 >p{
+    padding: 20px;
+}
+.blog-3 >small{
+    position: relative;
+    bottom: 30px;
+}
+
+
 .footer{
     display: flex;
     color:white ;
@@ -107,10 +176,18 @@ text-align: center;
    background-color: rgba(190, 178, 162, 0.705);
    border: solid;
    border-color: white;
-   margin: ;
+   overflow-x: hidden;
+   margin-right: 50px;
+   margin-left: 20px;
+}
+#contact >h3{
+text-align: center;
 }
 #reviews{
     color: goldenrod;
+}
+#reviews >h4{
+    text-align: center;
 }
 #services{
     color:goldenrod ;
@@ -129,19 +206,22 @@ button{
     width: 200px;
     margin-bottom: 20px;
     position: relative;
-    left: 20px;
+    left: 75%;
     color: white;
     background-color: black;
     cursor: pointer;
 }
 .navigation{
     width: 100%;
-    
+
+}
+nav >a{
+    text-decoration: none;
 }
 .icon >img{
 position:fixed;
-right:15% ;
-top: 500px;
+right:2% ;
+top: 475px;
 
 }
 .wicon{
@@ -181,17 +261,152 @@ top: 500px;
     form >div{
         display: grid;
         grid-template-columns: 1fr;
+        padding: 10px;
+        
     }
     form >label{
         display: grid;
         grid-template-columns: 1fr;
     }
    
+    /*gallery*/
+    .parent{
+    display: grid;
+    gap: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+    grid-template-areas: 
+    "pic1 pic1 pic1 pic2 pic2 pic2 "
+    "pic1 pic1 pic1 pic4 pic5 pic5 "
+    "pic3 pic3 pic3 pic4 pic5 pic5 " 
+    "pic6 pic6 pic7 pic7 pic5 pic5 "
+    "pic6 pic6 pic7 pic7 pic5 pic5"
+    "pic6 pic6 pic9 pic9 pic9 pic10"
+    "pic8 pic8 pic9 pic9 pic9 pic10";
+}
+
+.parent >section{
+    background-color: grey;
+    
+}
+
+.pic1{
+     grid-area: pic1;
+     height: 200px;
+     
+}
+.pic2{
+     grid-area: pic2;
+     height: 150px;
+}
+.pic3{
+     grid-area: pic3;
+     height: 50px;
+     
+}
+.pic4{
+     grid-area: pic4;
+}
+.pic5{
+     grid-area: pic5;
+}
+.pic6{
+     grid-area: pic6;
+     height: 200px;
+}
+.pic7{
+     grid-area: pic7;
+}
+.pic8{
+     grid-area: pic8;
+}
+.pic9{
+     grid-area: pic9;
+    
+}
+.pic10{
+    grid-area:pic10;
+}
+.pic1 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+.pic1 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic2 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic3 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic4 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic5 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic6 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic7 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic8 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic9 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
+.pic10 >img{
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: red;
+}
+
 
 /*responsiveness*/
 
     @media  (max-width: 768px) {
-        flex-direction: column-gap: 20px;
       .navigation{
         flex-direction: column;
         flex-wrap: wrap;
@@ -202,7 +417,7 @@ top: 500px;
         .body{
            flex-direction: column;
       } 
-        }
+        
         .footer{
             flex-direction: column;
       }
@@ -219,12 +434,17 @@ top: 500px;
             flex-direction: column;
       
       }
-      h1{
-        font-size: medium;
+      
+      #about {
+        font-size: 30px;
       }
-      h1 >p{
-        font-size: smallss;
+      #home {
+        font-size: 40px;
       }
       
-    
+      body{
+        overflow-x: hidden;
+      }
+      
+    }
     
