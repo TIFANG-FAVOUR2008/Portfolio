@@ -16,6 +16,7 @@ width: 100%;
 height: 30px;
 position: fixed;
 top: 0%;
+text-decoration: none;
 }
 nav >a:hover{
 color: white;
@@ -103,11 +104,10 @@ text-align: center;
 }
 #contact{
     color: black;
-    text-align: center;
    background-color: rgba(190, 178, 162, 0.705);
    border: solid;
    border-color: white;
-   margin: 50px 300px;
+   margin: ;
 }
 #reviews{
     color: goldenrod;
@@ -115,10 +115,15 @@ text-align: center;
 #services{
     color:goldenrod ;
 }
-#services ol{
+#services >ol{
 display: grid;
-grid-template-columns:1fr 1fr 1fr;
-grid-template-rows:1fr 1fr 1fr ;
+row-gap: 20px;
+}
+#services >h3{
+    text-align: center;
+}
+#contact >h2{
+    text-align: center;
 }
 button{
     width: 200px;
@@ -136,7 +141,7 @@ button{
 .icon >img{
 position:fixed;
 right:15% ;
-top: 50px
+top: 500px;
 
 }
 .wicon{
@@ -145,6 +150,8 @@ top: 50px
 }
     .blog1child1 {
         display: flex;
+        height: 50px;
+        width: 50px;
     }
     .blog-1 >small{
         position: relative;
@@ -153,6 +160,8 @@ top: 50px
     }
 .blog2child2 {
         display: flex;
+         height: 50px;
+        width: 50px;
     }
     .blog-2 >small{
         position: relative;
@@ -161,16 +170,28 @@ top: 50px
     }
     .blog3child3 {
         display: flex;
+         height: 50px;
+        width: 50px;
     }
     .blog-3 >small{
         position: relative;
         left: 50px;
         
     }
+    form >div{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    form >label{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+   
 
 /*responsiveness*/
 
-    @media (max-width: 768px) {
+    @media  (max-width: 768px) {
+        flex-direction: column-gap: 20px;
       .navigation{
         flex-direction: column;
         flex-wrap: wrap;
@@ -197,6 +218,12 @@ top: 50px
         #services{
             flex-direction: column;
       
+      }
+      h1{
+        font-size: medium;
+      }
+      h1 >p{
+        font-size: smallss;
       }
       
     
