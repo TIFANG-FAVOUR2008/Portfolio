@@ -2,6 +2,11 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+*{
+            width: 100vw;
+            overflow-x: hidden;
+        }
+      
 body{
     background-color: black;
     width: 100vw;
@@ -464,7 +469,10 @@ nav >a{
        gap: 15px;
        justify-content: center;
       }
-
+        *{
+            width: 100vw;
+            overflow-x: hidden;
+        }
       
     }
     
