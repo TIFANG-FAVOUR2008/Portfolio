@@ -432,9 +432,6 @@ nav >a{
       .cards{
         flex-direction: column;
       }
-        .body{
-           flex-direction: column;
-      } 
         
         .footer{
             flex-direction: column;
