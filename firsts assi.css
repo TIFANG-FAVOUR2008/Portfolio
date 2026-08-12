@@ -2,9 +2,7 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-*{
-            overflow-x: hidden;
-        }
+
       
 body{
     background-color: black;
@@ -30,6 +28,7 @@ text-decoration: none;
 flex-wrap: wrap;
 overflow-x: hidden;
 align-items: center;
+padding: 20px;
 }
 nav >a:hover{
 color: white;
@@ -54,10 +53,11 @@ padding: 20px;
     font-size: 60px;
 }
 .blog-1{
-    background-color: white;
+    background-color: goldenrod;
     width: 350px;
     height: 420px;
-    border-radius: 20px;
+   border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .blog1child1 >img{
     width: 35px;
@@ -71,15 +71,17 @@ padding: 20px;
 .blog-1 >img{
     height: 150px;
     width: 350px;
-    border-radius: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.blog-1 >h2{
+.blog-1 >h6{
     padding: 10px;
     margin: 10px;
-    background-color: goldenrod;
-    width: 130px;
+    background-color: white;
+    width: 100px;
     border-radius: 50px;
-    font-size: 15px;
+   
+   
 }
 .blog-1 >h3{
     padding: 5px;
@@ -100,10 +102,11 @@ padding: 20px;
 }
 
 .blog-2{
-    background-color: white;
+    background-color: goldenrod;
     width: 350px;
     height: 420px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
 }
 .blog2child2>img{
@@ -118,16 +121,17 @@ padding: 20px;
 .blog-2 >img{
     height: 150px;
     width: 350px;
-    border-radius: 15px
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-.blog-2 >h2{
+.blog-2 >h6{
     padding: 10px;
     margin: 10px;
-    background-color: goldenrod;
-   width: 130px;
+    background-color: white;
+   width: 100px;
     border-radius: 50px;
-    font-size: 15px;
+  
 }
 .blog-2 >h3{
     padding: 5px;
@@ -141,10 +145,11 @@ padding: 20px;
 }
 
 .blog-3{
-    background-color:white;
+    background-color:goldenrod;
     width: 350px;
     height: 420px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
 }
 .blog3child3>img{
@@ -160,15 +165,16 @@ padding: 20px;
 .blog-3 >img{
    height: 150px;
     width: 350px;
-    border-radius: 15px
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
-.blog-3 >h2{
+.blog-3 >h6{
     padding: 10px;
     margin: 10px;
-    background-color: goldenrod;
-    width: 130px;
+    background-color: white;
+    width: 100px;
     border-radius: 50px;
-    font-size: 15px;
+   
 }
 .blog-3 >h3{
     padding: 5px;
@@ -194,8 +200,9 @@ padding: 20px;
    border: solid;
    border-color: goldenrod;
    overflow-x: hidden;
-   margin-right: 50px;
-   margin-left: 20px;
+   margin-right:35% ;
+   margin-left:35% ;
+   
 }
 #contact >h3{
 text-align: center;
@@ -220,11 +227,11 @@ row-gap: 20px;
     text-align: center;
 }
 button{
-    width: 200px;
-    margin-bottom: 20px;
     color: white;
     background-color:black;
     cursor: pointer;
+    margin-left:25% ;
+    margin-right:25% ;
 }
 .navigation{
     width: 100%;
@@ -285,6 +292,10 @@ nav >a{
     form >label{
         display: grid;
         grid-template-columns: 1fr;
+    }
+    input{
+        width: 100%;
+       
     }
    
     /*gallery*/
@@ -465,9 +476,7 @@ nav >a{
        gap: 15px;
        justify-content: center;
       }
-        *{
-            overflow-x: hidden;
-        }
+       
       
     }
     
