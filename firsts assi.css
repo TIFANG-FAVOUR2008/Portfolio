@@ -3,7 +3,6 @@ html{
     overflow-x: hidden;
 }
 *{
-            width: 100vw;
             overflow-x: hidden;
         }
       
@@ -467,7 +466,6 @@ nav >a{
        justify-content: center;
       }
         *{
-            width: 100vw;
             overflow-x: hidden;
         }
       
