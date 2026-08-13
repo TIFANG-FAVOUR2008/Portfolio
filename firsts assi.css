@@ -9,7 +9,7 @@ html{
 body{
     background-color: black;
     width: 100vw;
-    overflow-y: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -61,7 +61,7 @@ padding: 20px;
 .blog-1{
     background-color: goldenrod;
     flex: 1;
-    height: 100%;
+    min-height: 550px;
    border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -102,20 +102,24 @@ padding: 20px;
 }
 .cards{
     display: flex;
-    height: 500px;
-    flex-wrap: wrap;
+    height: fit-content;
+
+    /* flex-wrap: wrap; */
     flex: 1;
     gap: 10px;
     justify-content: space-around;
     padding: 10px;
+    
+    
 
 
 }
 
+
 .blog-2{
     background-color: goldenrod;
     flex: 1;
-    height: 100%;
+    min-height: 550px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -158,7 +162,7 @@ padding: 20px;
 .blog-3{
     background-color:goldenrod;
     flex: 1;
-    height: 100%;
+    min-height: 550px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -447,13 +451,19 @@ nav >a{
 
 /*responsiveness*/
 
-    @media  (max-width: 468px) {
+    @media(max-width: 468px){
       .navigation{
         display: flex;
       }
       .cards{
+        display: flex;
         flex-direction: column;
+       
       }
+      /* #blog{
+        display: flex;
+        flex-direction: column;
+      } */
         
         .footer{
             flex-direction: column;
