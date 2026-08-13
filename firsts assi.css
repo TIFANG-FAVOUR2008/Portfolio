@@ -458,13 +458,9 @@ nav >a{
       .cards{
         display: flex;
         flex-direction: column;
-       
+       overscroll-behavior-x: contain;
       }
-      /* #blog{
-        display: flex;
-        flex-direction: column;
-      } */
-        
+      
         .footer{
             flex-direction: column;
       }
